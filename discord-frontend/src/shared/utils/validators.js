@@ -21,7 +21,11 @@ const validatePassword = (password) => {
 
 
 export const validateMail = (mail) => {
-    const emailPattern = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    
+
+    // /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
+
+    const emailPattern =/^[a-zA-Z0-9]+@+[a-zA-Z0-9]+.+[A-z]/;
     return emailPattern.test(mail);
 };
 const validateUsername =(username) => {

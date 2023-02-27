@@ -2,9 +2,9 @@ import {openAlertMessage} from "./alertActions";
 import * as api from "../../api";
 
 export const friendsActions = {
-    SET_FRIENDS: "FRIENDS.SET_FRIENDS",
-    SET_PENDING_FRIENDS_INVITATIONS : "FRIENDS.SET_PENDING_FRIENDS_INVITATIONS",
-    SET_ONLINE_USERS : "FRIENDS.SET_ONLINE_USERS",
+    SET_FRIENDS:"FRIENDS.SET_FRIENDS",
+    SET_PENDING_FRIENDS_INVITATIONS :"FRIENDS.SET_PENDING_FRIENDS_INVITATIONS",
+    SET_ONLINE_USERS :"FRIENDS.SET_ONLINE_USERS",
 
 };
 
@@ -17,10 +17,9 @@ export const getActions = (dispatch) => {
          rejectFriendInvitation: (data) => dispatch(rejectFriendInvitation(data)),
     };
 };
-
 export const setPendingFriendsInvitations = (pendingFriendsInvitations) => {
     return {
-        type: friendsActions. SET_PENDING_FRIENDS_INVITATIONS,
+        type:friendsActions.SET_PENDING_FRIENDS_INVITATIONS,
         pendingFriendsInvitations,
     }
 };

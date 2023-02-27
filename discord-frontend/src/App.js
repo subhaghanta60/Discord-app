@@ -3,7 +3,7 @@ import {
   BrowserRouter as Router,
   Routes,
   Route, 
-  Navigate, 
+  // Navigate, 
   } from 'react-router-dom';
 // import { BrowserRouter as Router, Switch, Route, Redirect,} from "react-router-dom";
 // import logo from './logo.svg';
@@ -13,7 +13,7 @@ import './App.css';
 import LoginPage from "./authPages/LoginPage/LoginPage";
 import RegisterPage from "./authPages/RegisterPage/RegisterPage";
 import Dashboard from "./Dashboard/Dashboard";
-import { useNavigate } from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom';
 import AlertNotification from './shared/components/AlertNotification';
 
 function App() {
